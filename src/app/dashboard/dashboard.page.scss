@@ -1,0 +1,59 @@
+
+  ion-card {
+    
+    display:inline-block;
+    text-align: center;
+    width: 30%;
+    min-width: 200px;
+    height: auto;
+    
+    ion-card-header{
+      font-size:x-large;
+      text-align: center;
+    }
+    ion-card-subtible{
+      font-size: large;
+    }
+    img{
+      box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+      height: fit-content; 
+    }
+  }
+  .tarjetas{
+    position: relative;
+    margin-top: 10%;
+
+  }
+    
+  
+    
+    .bienvenida{
+      position: relative;
+      top: 10%;
+      text-align: center;
+    .titulo {
+      top: 36%;
+      font-size: 2em;;
+      width: 100%;
+      font-weight: bold;
+      color: rgb(12, 1, 1);
+    }
+  
+    .card-subtitle {
+      font-size: 1.50em;
+      top: 57%;
+      width: 100%;
+      color: rgba(5, 2, 2, 0.849);
+    }
+  }
+  ion-content.background{
+    position: absolute;
+    --background: url(https://previews.123rf.com/images/quartadis/quartadis1607/quartadis160700091/61344920-valise-d-urgence-concept-de-services-de-soins-de-sant%C3%A9-de-m%C3%A9decine-%C3%A9l%C3%A9ments-m%C3%A9dicaux-d-infographie-o.jpg) 0 0/100% 100% no-repeat;
+    background-size:cover;
+  }
+  ion-card-content{
+    max-height: 200px ;
+    margin: 0%;
+    padding: 0%;
+  }
+  

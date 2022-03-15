@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseñas</ion-label>
+          <ion-input  type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Repetir Contraseñas</ion-label>
+          <ion-input  type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-router-link [routerLink]="['/forgot-password']">Olvidaste la Contraseñas</ion-router-link>
+        </ion-item>
+        <ion-ite>
+          <ion-button [routerLink]="['/login']" color="primary">Login</ion-button>  
+        </ion-ite>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-footer>
+    <ion-router-link [routerLink]="['/registration']">Crear una Cuenta</ion-router-link>
+  </ion-footer>
+</ion-content>

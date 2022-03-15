@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+    <img src="assets/img/fondoheader.png" alt="">
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-card class="contenedor">
+    <ion-card-header class="centrado">
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card-content align-self-center>
+  
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseñas</ion-label>
+          <ion-input  type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-router-link align-self-right [routerLink]="['/forgot-password']">Olvidaste la Contraseñas</ion-router-link>
+        </ion-item>
+        <ion-ite>
+          <ion-button [routerLink]="['/login']" color="primary">Login</ion-button>  
+        </ion-ite>
+    
+</ion-card-content>
+</ion-card>
+
+  <ion-footer>
+    <ion-router-link [routerLink]="['/registration']">Crear una Cuenta</ion-router-link>
+  </ion-footer>
+</ion-content>
